@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjouterCategorieActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/libelle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:hint="Libellé" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="200dp">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:hint="Description" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textColor= "#FFFFFF"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/redbutton"
+            android:text="Ajouter"
+            android:onClick="Ajouter"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginRight="10dp"
+            android:textColor= "#FFFFFF"
+            android:background="@drawable/redbutton"
+            android:text="ANNULER"
+            android:onClick="Annuler"/>
+    </LinearLayout>
+</LinearLayout>
